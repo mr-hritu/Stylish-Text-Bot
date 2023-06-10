@@ -6,4 +6,4 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-CMD ["/bin/bash", "/start.sh"]
+CMD ["python3", "bot.py"]
