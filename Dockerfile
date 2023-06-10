@@ -6,7 +6,6 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /Stylish-Text-Bot
-WORKDIR /Stylish-Text-Bot
-COPY start.sh /start.sh
+WORKDIR ./
+COPY start.sh ..
 CMD ["/bin/bash", "/start.sh"]
